@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #12d3ed, #12d3ed);
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+}
+
+.converter-card {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.temperature-icon {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.header h1 {
+    color: #222;
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.header p {
+    color: #777;
+    font-size: 15px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus,
+select:focus {
+    border-color: #12d3ed;
+}
+
+#errorMessage {
+    display: block;
+    margin-top: 7px;
+    color: #e44230;
+    font-size: 14px;
+    min-height: 18px;
+}
+
+#convertBtn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #12d3ed;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#convertBtn:hover {
+    background: #12d3ed;
+    transform: translateY(-2px);
+}
+
+.results {
+    margin-top: 25px;
+    padding: 20px;
+    background: #f7f8fc;
+    border-radius: 15px;
+}
+
+.results h2 {
+    text-align: center;
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.result-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 14px 16px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border-left: 5px solid #12d3ed;
+}
+
+.result-box:last-child {
+    margin-bottom: 0;
+}
+
+.result-box span {
+    color: #555;
+    font-weight: 600;
+}
+
+.result-box strong {
+    color: #333;
+    font-size: 18px;
+}
+
+.clear-btn {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background: white;
+    color: #555;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.clear-btn:hover {
+    background: #f1f1f1;
+}
+
+@media (max-width: 500px) {
+    .converter-card {
+        padding: 25px 20px;
+    }
+
+    .header h1 {
+        font-size: 25px;
+    }
+}
