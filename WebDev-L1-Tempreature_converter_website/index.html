@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="converter-card">
+
+            <div class="header">
+                <div class="temperature-icon">🌡️</div>
+                <h1>Temperature Converter</h1>
+                <p>Convert temperatures quickly and accurately</p>
+            </div>
+
+            <div class="form-group">
+                <label for="temperature">Enter Temperature</label>
+                <input
+                    type="text"
+                    id="temperature"
+                    placeholder="e.g. 25"
+                    autocomplete="off"
+                >
+                <small id="errorMessage"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="inputUnit">Input Unit</label>
+                <select id="inputUnit">
+                    <option value="C">Celsius (°C)</option>
+                    <option value="F">Fahrenheit (°F)</option>
+                    <option value="K">Kelvin (K)</option>
+                </select>
+            </div>
+
+            <button id="convertBtn">Convert Temperature</button>
+
+            <div class="results" id="results">
+                <h2>Conversion Results</h2>
+
+                <div class="result-box">
+                    <span>Celsius</span>
+                    <strong id="celsiusResult">--</strong>
+                </div>
+
+                <div class="result-box">
+                    <span>Fahrenheit</span>
+                    <strong id="fahrenheitResult">--</strong>
+                </div>
+
+                <div class="result-box">
+                    <span>Kelvin</span>
+                    <strong id="kelvinResult">--</strong>
+                </div>
+            </div>
+
+            <button class="clear-btn" id="clearBtn">Clear</button>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
